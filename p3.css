@@ -1,0 +1,63 @@
+body {
+	background-color: #c4bec1
+}
+
+.img-responsive {
+	padding-top: 50px;
+	height: 325px;
+}
+
+.questionbox {
+	margin-left: 3%;
+}
+
+.question {
+	padding-top: 50px;
+}
+
+.result {
+	margin-bottom: 20px;
+}
+
+.resultTxt + .descr{
+	margin-left: 2%;
+	font-style: italic;
+}
+
+#submitBut {
+	margin: 30px 2%;
+}
+
+button {
+	border: solid #47152b;
+	background-color: white;
+}
+
+input[type=radio] + label {
+   cursor: pointer;
+}
+input[type=radio] {
+   position: absolute;
+   height: 1px; width: 1px;
+   clip: rect(0 0 1 1);
+}
+input[type=radio] + label::before {
+   content: "\00a0";  /* Non-breaking space */
+   border-radius: 10px;
+   display: inline-block;
+   width: 1em;  height: 1em; 
+   text-align: center;
+   line-height: 1em;
+   font-size: 0.8em;
+   margin-right: 10px;
+   background-color: #aaa;
+   border: 0.125em solid white;
+}
+input[type=radio]:checked + label::before {
+   content: "\2022";  /* Bullet */
+   color: white;
+   background: purple;
+}
+input[type=radio]:focus + label::before {
+   box-shadow: 0 0 0 1px #888;
+}
